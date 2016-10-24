@@ -34,16 +34,18 @@
 ```
 patch_panel mirror dpid port mirror_port  
 ```
-dpid:データパスID  
-port:ミラーリングされるポート番号  
-mirror\_port:ミラーリングしたパケットの出力ポート番号
+- dpid:データパスID  
+- port:ミラーリングされるポート番号  
+- mirror\_port:ミラーリングしたパケットの出力ポート番号
 
 <a id="2.1.2"></a>
 ####2.パッチとポートミラーリングの一覧
 現在設定されているパッチとミラーリングポートを出力する．  
 #####使い方
-```patch_panel show dpid  ```  
-dpid:データパスID  
+```patch_panel show dpid  ``` 
+ 
+- dpid:データパスID  
+
 #####出力
 設定されているパッチの組と，ミラーリングされているポートと
 ミラーリングの出力先ポートの一覧を出力する．  
@@ -59,10 +61,12 @@ dpid:データパスID
 ####3.ミラーリングの削除
 設定されているミラーリングを削除する．
 #####使い方
-```patch_panel delete_mirror dpid port mirror_port  ```  
-dpid:データパスID  
-port:ミラーリングされるポート番号  
-mirror\_port:ミラーリングしたパケットの出力ポート番号
+```patch_panel delete_mirror dpid port mirror_port  ```
+  
+- dpid:データパスID  
+- port:ミラーリングされるポート番号  
+- mirror\_port:ミラーリングしたパケットの出力ポート番号
+
 #####出力
 引数に指定したミラーリングが存在しないその旨を表示する．
 正常にミラーリングが削除された場合は何も出力されない．
